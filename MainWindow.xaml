@@ -1,0 +1,74 @@
+﻿<Window x:Class="MatLab_OptimizationAlgorithms.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:ML ="clr-namespace:WPFMatLabPlotter"
+        xmlns:controls="clr-namespace:WpfMath.Controls;assembly=WpfMath"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        Title="Optimization Algorithms Demo" Height="450" Width="800" >
+    <Grid Background="{StaticResource DarkBackgroundBrush}">
+        <materialDesign:Card Padding="32" Margin="16" Background="{StaticResource DarkBackgroundBrush}">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="2*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                </Grid.ColumnDefinitions>
+                <Grid> <!-- Область работы с функциями, вввод, форматирование ии итд-->
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        
+                    </Grid.RowDefinitions>
+
+                    <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Left" >
+                        <TextBox  Style="{StaticResource MaterialDesignFloatingHintTextBox}" Background="{StaticResource FocusedPanelBackgroundBrush}" Margin="0 0 0 20" 
+                             Foreground="{StaticResource PrimaryTextBrush}"
+                             >
+                            <materialDesign:HintAssist.Hint>
+                                <TextBlock Text="Input Your Function And Convert It via AI✨" Height="20" Width="300" HorizontalAlignment="Center" VerticalAlignment="Center"
+                                      Foreground="{StaticResource SecondaryTextBrush}"/>
+
+                            </materialDesign:HintAssist.Hint>
+                        </TextBox>
+                        <TextBox  Background="{StaticResource FocusedPanelBackgroundBrush}" 
+                                  Foreground="{StaticResource PrimaryTextBrush}"
+                                  >
+                            <materialDesign:HintAssist.Hint>
+                                <TextBlock Text="Input it manually" Height="20" Width="300" HorizontalAlignment="Center" VerticalAlignment="Center"
+                                 Foreground="{StaticResource SecondaryTextBrush}"/>
+
+                            </materialDesign:HintAssist.Hint>
+                        </TextBox>
+
+
+                    </StackPanel>
+                    
+                </Grid>
+
+                <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                    <DockPanel>
+                        <ML:MatlabPlot x:Name="MainPlot" Width="300" Height="300" Margin="10" BorderBrush="Black" BorderThickness="1"/>
+                    </DockPanel>
+                    <ScrollViewer Style="{DynamicResource MaterialDesignScrollViewer}">
+                        <StackPanel>
+                            <controls:FormulaControl Foreground="White" Formula="\left(x^2 + 2 \cdot x + sdfdsdsfsdsdfsdsdf2\right) = 0"/>
+                        </StackPanel>
+                    </ScrollViewer>
+                </StackPanel>
+            </Grid>
+            </materialDesign:Card>
+       
+    </Grid>
+</Window>

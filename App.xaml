@@ -1,0 +1,42 @@
+﻿<Application x:Class="MatLab_OptimizationAlgorithms.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:MatLab_OptimizationAlgorithms"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesign2.Defaults.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.Orange.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Secondary/MaterialDesignColor.Lime.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+           
+                <!-- Background Colors -->
+                <!-- Темный фон -->
+                <SolidColorBrush x:Key="DarkBackgroundBrush" Color="#1e2228"/>
+                <!-- Фон панелей -->
+                <SolidColorBrush x:Key="UnFocusedPanelBackgroundBrush" Color="#5b5b5b"/>
+                <SolidColorBrush x:Key="FocusedPanelBackgroundBrush" Color="#2c3135"/>
+            
+
+                <!-- Основной белый текст -->
+                <SolidColorBrush x:Key="PrimaryTextBrush" Color="#FFFFFF"/>
+                <!-- Вторичный светло-серый текст -->
+                <SolidColorBrush x:Key="SecondaryTextBrush" Color="#B0BEC5"/>
+                <!-- Троичный:D берюзовый текст -->
+              <SolidColorBrush x:Key="AccentTextBrush" Color="#29666d"/>
+
+            <!-- Accent and Highlight Colors -->
+                <SolidColorBrush x:Key="AccentBrush" Color="#00BCD4"/>
+                <!-- Бирюзовый акцент -->
+            <SolidColorBrush x:Key="HighlightBrush" Color="#fd8845"/>
+                <!-- Оранжевый акцент для действий -->
+
+
+
+
+        </ResourceDictionary>
+    </Application.Resources>
+    
+</Application>

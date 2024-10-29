@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <Platforms>AnyCPU;x86</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Google_GenerativeAI" Version="1.0.2" />
+    <PackageReference Include="MaterialDesignColors" Version="3.1.0" />
+    <PackageReference Include="MaterialDesignThemes" Version="5.1.0" />
+    <PackageReference Include="WpfMath" Version="2.1.0" />
+    <PackageReference Include="WPFMatlabPlotter" Version="1.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="matlab_plot">
+      <HintPath>..\..\..\OneDrive\Документы\matlab_plot.dll</HintPath>
+    </Reference>
+    <Reference Include="MWArray">
+      <HintPath>..\..\..\..\..\Program Files\MATLAB\R2023b\toolbox\dotnetbuilder\bin\win64\v4.0\MWArray.dll</HintPath>
+    </Reference>
+    <Reference Include="Newton_Raphson">
+      <HintPath>..\..\..\OneDrive\Документы\MATLAB\Newton_Raphson\for_testing\Newton_Raphson.dll</HintPath>
+    </Reference>
+    <Reference Include="Newton_RaphsonNative">
+      <HintPath>..\..\..\OneDrive\Документы\MATLAB\Newton_Raphson\for_testing\Newton_RaphsonNative.dll</HintPath>
+    </Reference>
+    <Reference Include="sinfunc_example">
+      <HintPath>..\..\..\OneDrive\Документы\MATLAB\sinfunc_example\for_testing\sinfunc_example.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

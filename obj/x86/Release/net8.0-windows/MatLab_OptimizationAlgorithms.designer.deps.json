@@ -1,0 +1,28 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "WPFMatlabPlotter/1.0.1": {
+        "runtime": {
+          "lib/net461/WPFMatlabPlotter.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WPFMatlabPlotter/1.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NGrSjUMTOUWZVpfEohD4reUVW4vYPbo5w1Nxv9TqUdwQybizPaYZDY3dpmSCrb8z+nTjD+2iCBhr9FoB2Gk49w==",
+      "path": "wpfmatlabplotter/1.0.1",
+      "hashPath": "wpfmatlabplotter.1.0.1.nupkg.sha512"
+    }
+  }
+}
